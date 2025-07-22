@@ -1,0 +1,26 @@
+Check Type,Resource / Detail
+public_s3_buckets,No issues found
+s3_bucket_audit,"{""bucket"": ""aws-cloudtrail-logs-767950115988-1259e17d"", ""status"": ""Private"", ""public_access"": false, ""policy"": [{""Sid"": ""AWSCloudTrailAclCheck20150319-90556042-f65b-4f53-a5a6-7fd03f5a1a91"", ""Effect"": ""Allow"", ""Principal"": {""Service"": ""cloudtrail.amazonaws.com""}, ""Action"": ""s3:GetBucketAcl"", ""Resource"": ""arn:aws:s3:::aws-cloudtrail-logs-767950115988-1259e17d"", ""Condition"": {""StringEquals"": {""AWS:SourceArn"": ""arn:aws:cloudtrail:ap-south-1:767950115988:trail/MyTrail""}}}, {""Sid"": ""AWSCloudTrailWrite20150319-b746f0a6-4d66-455d-96ca-710978b0ce99"", ""Effect"": ""Allow"", ""Principal"": {""Service"": ""cloudtrail.amazonaws.com""}, ""Action"": ""s3:PutObject"", ""Resource"": ""arn:aws:s3:::aws-cloudtrail-logs-767950115988-1259e17d/AWSLogs/767950115988/*"", ""Condition"": {""StringEquals"": {""AWS:SourceArn"": ""arn:aws:cloudtrail:ap-south-1:767950115988:trail/MyTrail"", ""s3:x-amz-acl"": ""bucket-owner-full-control""}}}], ""acl_grants"": [], ""issues"": []}"
+s3_bucket_audit,"{""bucket"": ""mybuckettesting1920"", ""status"": ""Public via Policy"", ""public_access"": true, ""policy"": [{""Effect"": ""Allow"", ""Principal"": ""*"", ""Action"": ""s3:GetObject"", ""Resource"": ""arn:aws:s3:::mybuckettesting1920/*""}], ""acl_grants"": [], ""issues"": [""Bucket policy allows public access""]}"
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForAPIGateway' uses wildcard in policy 'APIGatewayServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForECS' uses wildcard in policy 'AmazonECSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForECS' uses wildcard in policy 'AmazonECSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForECS' uses wildcard in policy 'AmazonECSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForECS' uses wildcard in policy 'AmazonECSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForECS' uses wildcard in policy 'AmazonECSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForECS' uses wildcard in policy 'AmazonECSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForECS' uses wildcard in policy 'AmazonECSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForECS' uses wildcard in policy 'AmazonECSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForECS' uses wildcard in policy 'AmazonECSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForECS' uses wildcard in policy 'AmazonECSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForECS' uses wildcard in policy 'AmazonECSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForElasticLoadBalancing' uses wildcard in policy 'AWSElasticLoadBalancingServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForRDS' uses wildcard in policy 'AmazonRDSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForRDS' uses wildcard in policy 'AmazonRDSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForRDS' uses wildcard in policy 'AmazonRDSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForRDS' uses wildcard in policy 'AmazonRDSServiceRolePolicy'.
+wildcard_iam_policies,❗ Role 'AWSServiceRoleForTrustedAdvisor' uses wildcard in policy 'AWSTrustedAdvisorServiceRolePolicy'.
+open_security_groups,❗ Security Group 'sg-0f56b622db8b20079' allows 0.0.0.0/0 on ports 22-22.
+unencrypted_rds_instances,No issues found
+unencrypted_ebs_volumes,⚠️ Failed to check EBS encryption: An error occurred (UnauthorizedOperation) when calling the DescribeVolumes operation: You are not authorized to perform this operation. User: arn:aws:iam::767950115988:user/mini-cspm is not authorized to perform: ec2:DescribeVolumes because no identity-based policy allows the ec2:DescribeVolumes action
+cloudtrail_logging,No issues found
